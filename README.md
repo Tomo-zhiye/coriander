@@ -1,4 +1,4 @@
-# korianderapp
+# Corianderapp
 
 A new Flutter application.
 
