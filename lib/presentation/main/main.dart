@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:korianderapp/presentation/book_list/book_list_page.dart';
+import 'package:korianderapp/presentation/login/login_page.dart';
 import 'package:korianderapp/presentation/main/main_model.dart';
+import 'package:korianderapp/presentation/sinup/signup_page.dart';
 import 'package:provider/provider.dart';
 
 void main() => runApp(MyApp());
@@ -27,12 +29,20 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   RaisedButton(
-                    child: Text('ボタン'),
+                    child: Text('新規登録'),
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => (BookListPage())),
+                        MaterialPageRoute(builder: (context) => (SignUpPage())),
+                      );
+                    },
+                  ),
+                  RaisedButton(
+                    child: Text('ログイン'),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => (LogInPage())),
                       );
                     },
                   ),
